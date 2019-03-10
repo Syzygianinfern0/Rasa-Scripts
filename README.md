@@ -50,7 +50,25 @@ The process of running the interactive session is very similar to training the R
 
 ``` python train_interactive.py ```  
    
+## Deploy on Messenger
+### Managing Credentials
 
+Have the following code in credentials.yml for authentication of the deployment of the bot on the Page created
+
+```yaml
+  verify: "##########################"
+  secret: "**************************"
+  page-access-token: "$$$$$$$$$$$$$$$"
+```
+The endpoint for receiving facebook messenger messages is ```http://localhost:5005/webhooks/facebook/webhook```, replacing the host and port with the appropriate values. This is the URL you should add in the configuration of the webhook.
+
+### The Actual Part
+If you’re testing on your local machine (e.g. not a server), you will need to use [ngrok](https://ngrok.com/). This gives your machine a domain name and so that facebook, slack, etc. know where to send messages.
+
+```bash
+python -m rasa_core.run -d models/dialogue -u models/nlu/current --port 5002 --credentials credentials.yml
+```
+   
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
