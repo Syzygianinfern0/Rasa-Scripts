@@ -2,6 +2,11 @@
 
 This is a collection of all scripts or shortcuts I may be using for Rasa training and running automation
 
+Clone it with 
+```bash
+git clone https://github.com/Syzygianinfern0/Rasa-Scripts.git
+```
+ 
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Rasa.
