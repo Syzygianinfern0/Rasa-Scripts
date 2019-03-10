@@ -78,7 +78,7 @@ ngrok http 5004
 ```
 5. Insert your callback URL on webhook of your app in Edit Subscription page of which will look like https://<YOUR_HOST>/webhooks/facebook/webhook. YOUR HOST will be the forwarding URL as obtained from ngrok forwarding (eg : https://6010db3b.ngrok.io ) . Insert the Verify Token which has to match the verify entry in your run_app.py.
 
-6. Talk with your bot on [facebook messenger](messenger.com) refering to the username of the page you created.
+6. Talk with your bot on [facebook messenger](https://www.messenger.com) refering to the username of the page you created.
    
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
